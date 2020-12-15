@@ -70,7 +70,7 @@
   
    
    
-get_days_of_power(3,6)
+
 
 
 
