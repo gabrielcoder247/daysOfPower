@@ -7,7 +7,11 @@
                     ans.push(i);
                 }
                 let dayOfPower1 = ans.length
-                dayOfPower1 * R1;
+                let sumOfdayRate = dayOfPower1 * R1;
+                if(k > sumOfdayRate){
+                    return k -sumOfdayRate
+                }
+
 
                 return function get_days_of_power(R2, D2, D3 ){
                     var ans = [];
@@ -15,14 +19,21 @@
                     ans.push(i);
                 }
                 let dayOfPower2 = ans.length
-                dayOfPower2 * R2;
+                let sumOfdayRate = dayOfPower2 * R2;
+                if(k > sumOfdayRate){
+                    return k -sumOfdayRate
+                }
+                
                 return  function get_days_of_power(R3, D3, D4 ){
                     var ans = [];
                 for (let i = D3; i <= D4; i++) {
                     ans.push(i);
                 }
                 let dayOfPower3 = ans.length
-                dayOfPower3 * R3;
+                let sumOfdayRate =  dayOfPower3 * R3;
+                if(k > sumOfdayRate){
+                    return k - sumOfdayRate
+                }
                 return dayOfPower1+dayOfPower2+dayOfPower3
                 // return D1+D2+D3
             }
